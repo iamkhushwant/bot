@@ -8,7 +8,7 @@ def get_db():
     client = MongoClient(CONNECTION_STRING)
     return client["file_store"]
 
-if sorted(os.listdir()) != sorted(['processed', 'processing', 'queue', 'assignment.py']):
+if sorted(os.listdir()) != sorted(['.git','.gitignore','README.md','processed', 'processing', 'queue', 'assignment.py']):
     os.mkdir('processing')
     os.mkdir('queue')
     os.mkdir('processed')
